@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zomato Clone</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .restaurant {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+            display: inline-block;
+            width: 300px;
+        }
+        .menu {
+            list-style: none;
+            padding: 0;
+        }
+        .menu li {
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Zomato Clone</h1>
+    <div class="restaurant">
+        <h2>Pizza Hut</h2>
+        <ul class="menu">
+            <li>Margherita - $10 <button onclick="order('Margherita')">Order</button></li>
+            <li>Pepperoni - $12 <button onclick="order('Pepperoni')">Order</button></li>
+        </ul>
+    </div>
+    <div class="restaurant">
+        <h2>Burger King</h2>
+        <ul class="menu">
+            <li>Whopper - $8 <button onclick="order('Whopper')">Order</button></li>
+            <li>Cheeseburger - $6 <button onclick="order('Cheeseburger')">Order</button></li>
+        </ul>
+    </div>
+    <script>
+        function order(item) {
+            alert('You ordered: ' + item);
+        }
+    </script>
+</body>
+</html>
