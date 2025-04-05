@@ -2,7 +2,7 @@
 FROM nginx:alpine
 
 # Copy HTML files to nginx default location
-COPY wedding.html /usr/share/nginx/html/wedding.html
+COPY wedding.html /usr/share/nginx/html/index.html
 
 
 # Expose port 80
