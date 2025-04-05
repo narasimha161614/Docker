@@ -1,0 +1,8 @@
+FROM nginx:alpine
+
+# Copy HTML files to nginx default location
+COPY zomato.html /usr/share/nginx/html/zomato.html
+
+
+# Expose port 80
+EXPOSE 80
