@@ -1,0 +1,10 @@
+# Use official Nginx image as base
+FROM nginx:alpine
+
+# Copy HTML file into the default Nginx directory
+COPY aadhar.html /usr/share/nginx/html/index.html
+
+# Expose port 80
+EXPOSE 80
+
+# Start Nginx (default command already runs nginx)
